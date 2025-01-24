@@ -112,6 +112,20 @@ return [
             // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
         ],
 
+        'erp_db' => [
+            'driver' => 'sqlsrv',
+            'url' => env('ERP_DB_URL'),
+            'host' => env('ERP_DB_HOST', 'localhost'),
+            'port' => env('ERP_DB_PORT', '1433'),
+            'database' => env('ERP_DB_DATABASE', 'laravel'),
+            'username' => env('ERP_DB_USERNAME', 'root'),
+            'password' => env('ERP_DB_PASSWORD', ''),
+            'charset' => env('ERP_DB_CHARSET', 'utf8'),
+            'prefix' => '',
+            'prefix_indexes' => true,
+            // 'encrypt' => env('DB_ENCRYPT', 'yes'),
+            // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
+        ],
     ],
 
     /*
